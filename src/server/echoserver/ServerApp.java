@@ -12,10 +12,11 @@ public class ServerApp {
             port = Integer.parseInt(args[0]);
         }
         try {
-            new MyServer(port).start();
-        }catch (IOException e) {
+            new MyServer().start(port);
+        } catch (IOException e) {
             System.err.println("Failed to create MyServer");
             e.printStackTrace();
         }
     }
+
 }
