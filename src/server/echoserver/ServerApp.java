@@ -2,6 +2,7 @@ package server.echoserver;
 
 import java.io.IOException;
 
+
 public class ServerApp {
 
     private static final int DEFAULT_PORT = 8189;
@@ -12,10 +13,12 @@ public class ServerApp {
             port = Integer.parseInt(args[0]);
         }
         try {
-            new MyServer(port).start();
-        }catch (IOException e) {
+            new MyServer().start(port);
+        } catch (IOException e) {
             System.err.println("Failed to create MyServer");
             e.printStackTrace();
         }
     }
+
 }
+
