@@ -1,4 +1,5 @@
-package chat;
+package chat.client;
+
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("sample.fxml"));
+        loader.setLocation(Main.class.getResource("view.fxml"));
 
         AnchorPane root = loader.load();
 
